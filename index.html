@@ -1,80 +1,333 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Montevalor</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Aptos", Arial, sans-serif;
-            background: linear-gradient(135deg, #0F4761, #1B6C89);
-            color: white;
-            text-align: center;
-        }
 
-        .container {
-            max-width: 600px;
-            margin: 120px auto;
-            padding: 20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        img {
-            max-width: 250px;
-            height: auto;
-            margin-bottom: 30px;
-        }
+<title>Montevalor</title>
 
-        h1 {
-            font-size: 34px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-            font-weight: 300;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            opacity: 0.9;
-        }
+<style>
 
-        .contact {
-            margin-top: 40px;
-            font-size: 20px;
-            font-weight: 500;
-        }
+*{
+box-sizing:border-box;
+}
 
-        .email-box {
-            margin-top: 10px;
-            font-size: 22px;
-            background: rgba(255,255,255,0.15);
-            padding: 12px 20px;
-            display: inline-block;
-            border-radius: 8px;
-        }
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#1a1a1a;
+color:white;
+line-height:1.6;
+}
 
-        @media (max-width: 500px) {
-            .container { margin: 60px 20px; }
-            h1 { font-size: 26px; }
-            p { font-size: 16px; }
-        }
-    </style>
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.5);
+backdrop-filter:blur(10px);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:10;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+opacity:0.9;
+}
+
+nav a:hover{
+opacity:1;
+}
+
+.logo-nav{
+height:35px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(135deg,#7a1c1c,#c44536);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:22px;
+opacity:0.9;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:100px 30px;
+}
+
+h2{
+font-size:36px;
+margin-bottom:25px;
+color:#ff8c42;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#262626;
+padding:35px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+background:#333333;
+}
+
+.card h3{
+margin-top:0;
+color:#ff8c42;
+}
+
+.focus{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.focus-box{
+background:#262626;
+padding:35px;
+border-radius:10px;
+}
+
+footer{
+background:#0d0d0d;
+text-align:center;
+padding:40px;
+font-size:14px;
+opacity:0.7;
+}
+
+.contact{
+text-align:center;
+font-size:18px;
+}
+
+.logo-center{
+max-width:200px;
+margin-bottom:30px;
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <div class="container">
 
-        <!-- Logo -->
-        <img src="logo.jpg" alt="Montevalor logo">
 
-        <!-- Titel -->
-    
+<nav>
 
-        <!-- Contact -->
-        <div class="contact">Contact</div>
-        <div class="email-box">info(@)montevalor.es</div>
+<img src="logo.jpg" class="logo-nav">
 
-    </div>
+<div>
+
+<a href="#about">Sobre</a>
+<a href="#services">Servicios</a>
+<a href="#focus">Inversión</a>
+<a href="#contact">Contacto</a>
+
+</div>
+
+</nav>
+
+
+
+<section class="hero">
+
+<div>
+
+<img src="logo.jpg" alt="Montevalor logo" class="logo-center">
+
+<h1>Montevalor</h1>
+
+<p>Inversiones Estratégicas y Asesoramiento</p>
+
+</div>
+
+</section>
+
+
+
+<section id="about" class="container">
+
+<h2>Sobre Montevalor</h2>
+
+<p>
+
+Montevalor es una plataforma estratégica de inversión y asesoramiento
+centrada en el sector inmobiliario, la estructuración corporativa
+y el desarrollo de activos a largo plazo.
+
+Montevalor actúa como entidad paraguas que coordina diferentes actividades
+de inversión y consultoría. En España, dichas actividades se llevan a cabo
+a través de su sociedad vinculada <strong>FHAM Azul S.L.</strong>,
+que funciona como entidad operativa responsable de la consultoría,
+los proyectos inmobiliarios y las actividades empresariales relacionadas.
+
+A través de esta estructura, Montevalor proporciona el marco estratégico
+para iniciativas de inversión, colaboraciones y desarrollo empresarial
+internacional, mientras que FHAM Azul S.L. ejecuta las actividades operativas
+dentro del mercado español.
+
+</p>
+
+</section>
+
+
+
+<section id="services" class="container">
+
+<h2>Servicios</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Consultoría Estratégica</h3>
+<p>
+Asesoramiento a empresas y emprendedores en estrategia,
+estructuración corporativa y expansión internacional.
+</p>
+</div>
+
+<div class="card">
+<h3>Actividad Inmobiliaria</h3>
+<p>
+Adquisición, desarrollo, promoción y gestión
+de activos inmobiliarios y proyectos de inversión.
+</p>
+</div>
+
+<div class="card">
+<h3>Explotación de Activos</h3>
+<p>
+Utilización y arrendamiento de activos muebles como
+vehículos, embarcaciones y equipamiento empresarial.
+</p>
+</div>
+
+<div class="card">
+<h3>Plataformas Digitales</h3>
+<p>
+Desarrollo de herramientas digitales que apoyan
+las actividades de inversión y consultoría.
+</p>
+</div>
+
+</div>
+
+<p style="margin-top:40px; opacity:0.8; font-size:16px;">
+
+En España, las actividades anteriormente descritas se desarrollan a través de
+<strong>FHAM Azul S.L.</strong>, entidad operativa dentro de la estructura Montevalor.
+
+</p>
+
+</section>
+
+
+
+<section id="focus" class="container">
+
+<h2>Enfoque de Inversión</h2>
+
+<div class="focus">
+
+<div class="focus-box">
+<h3>Inmobiliario</h3>
+<p>
+Inversión estratégica en activos inmobiliarios
+con enfoque en la creación de valor a largo plazo.
+</p>
+</div>
+
+<div class="focus-box">
+<h3>Estructuración Corporativa</h3>
+<p>
+Diseño y optimización de estructuras empresariales
+y vehículos de inversión internacionales.
+</p>
+</div>
+
+<div class="focus-box">
+<h3>Inversiones Estratégicas</h3>
+<p>
+Participación en iniciativas empresariales y proyectos
+alineados con el desarrollo sostenible de activos.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="container contact">
+
+<h2>Contacto</h2>
+
+<p>
+
+Para consultas empresariales:
+
+<br><br>
+
+<strong>Montevalor</strong>
+
+<br><br>
+
+info@montevalor.es
+
+</p>
+
+</section>
+
+
+
+<footer>
+
+Montevalor © 2026
+
+<p style="opacity:0.6; font-size:13px;">
+Las actividades operativas en España se realizan a través de FHAM Azul S.L.
+</p>
+
+</footer>
+
+
 
 </body>
+
 </html>
